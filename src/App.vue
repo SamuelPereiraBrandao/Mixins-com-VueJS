@@ -1,15 +1,15 @@
 <template>
-  <div style="display: flex; flex-direction: row">
+  <div class="principal">
 
-    <div style="flex-basis: 33%">
+    <div>
       <lista-filmes />
     </div>
 
-    <div style="flex-basis: 33%">
+    <div>
       <lista-pessoas />
     </div>
 
-    <div style="flex-basis: 33%">
+    <div>
       <lista-videogames />
     </div>
 
@@ -30,6 +30,12 @@ export default {
   }
 }
 </script>
-
-<style>
+<style scoped>
+.principal {
+  display: flex;
+  justify-content:space-around;
+  align-items: center;
+  width: 100vw;
+  height: 100vh;
+}
 </style>
